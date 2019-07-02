@@ -15,12 +15,12 @@ function weather() {
      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       $('#temp').html(data.currently.temperature + '° F');
       $('#daily').html(data.daily.summary);
-      $('#storm').html(data.currently.nearestStormDistance);
+      $('#storm').html(data.currently.nearestStormDistance + ' miles away ');
     });
   }
 
   function error() {
-    location.innerHTML = "Unable to retrieve your location";
+    location.innerHTML = "Unable to retrieve your location. Please enable geolocation and try again.";
   }
 
   location.innerHTML = "Locating...";
