@@ -14,7 +14,7 @@ function weather() {
 
      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       $('#temp').html(data.currently.temperature + '° F');
-      $('#minutely').html(data.minutely.summary);
+      $('#daily').html(data.daily.summary);
     });
   }
 
