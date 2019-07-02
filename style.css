@@ -1,23 +1,18 @@
 html{
 	font-family: "Avenir Next", Helevetica, sans-serif;
 	text-align: center;
+	visibility:hidden; 
 }
 
 body {
 	margin: 0 auto;
+	text-align: center;
 } 
 
 
 h1, h2 {
 	font-weight: 300;
+	text-align: center;
 }
 
-cover {
-	position: fixed; 
-	height: 100%; 
-	width: 100%; 
-	top:0; 
-	left: 0; 
-	background: #000; 
-	z-index:9999;
-}
+
