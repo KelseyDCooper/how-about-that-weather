@@ -7,6 +7,9 @@ body {
 	margin: 0 auto;
 } 
 
+p {
+	text-align: left;
+}
 h1, h2 {
 	font-weight: 300;
 }
