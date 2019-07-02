@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+   $("#cover").hide();
+});
+
 function weather() {
 
   var location = document.getElementById("location");
