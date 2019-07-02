@@ -15,11 +15,11 @@ h1, h2 {
 	text-align: center;
 }
 
-stormy > div {
+#stormy > div {
 	display: inline-block;
 }
 
-weatherman > div{
+#weatherman > div{
 	display: inline-block;
 }
 
