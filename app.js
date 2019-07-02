@@ -23,7 +23,7 @@ function weather() {
     location.innerHTML = "Unable to retrieve your location. Please enable geolocation and try again.";
   }
 
-  location.innerHTML = "Locating...";
+  location.innerHTML = "Loading your location data...just a sec";
 }
 
 weather();
