@@ -15,7 +15,7 @@ h1, h2 {
 	text-align: center;
 }
 
-prompt {
+#prompt {
 	display: inline-block;
 	text-align: center;
 }
