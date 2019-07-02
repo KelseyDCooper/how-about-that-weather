@@ -15,6 +15,7 @@ function weather() {
      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       $('#temp').html(data.currently.temperature + '° F');
       $('#daily').html(data.daily.summary);
+      $('#storm').html(data.currently.nearestStormDistance);
     });
   }
 
