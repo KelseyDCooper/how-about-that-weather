@@ -1,25 +1,14 @@
 html{
 	font-family: "Avenir Next", Helevetica, sans-serif;
 	text-align: center;
-	
 }
 
 body {
-margin: 0 auto;
-	text-align: center;
-	text-align: left;		
+	margin: 0 auto;
 } 
-
 
 h1, h2 {
 	font-weight: 300;
-	
 }
-
-#prompt {
-	display: inline-block;
-	
-}
-
 
 
