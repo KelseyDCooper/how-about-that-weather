@@ -3,7 +3,7 @@ function weather() {
 
   var location = document.getElementById("location");
   var apiKey = 'ed9f91425e569a5c43c777987c15b74e'; 
-  var url = 'https://api.forecast.io/forecast/';
+  var url = 'https://api.darksky.net/forecast/';
 
   navigator.geolocation.getCurrentPosition(success, error);
 
@@ -13,12 +13,10 @@ function weather() {
 
     location.innerHTML = 'Latitude is ' + latitude + '° <br> Longitude is ' + longitude + '°';
 
-     $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
+  $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       $('#temp').html(data.currently.temperature + '° F');
       $('#daily').html(data.daily.summary);
       $('#storm').html(data.currently.nearestStormDistance + ' miles away ');
-
-      
     });
   }
 
@@ -30,3 +28,4 @@ function weather() {
 }
 
 weather();
+
