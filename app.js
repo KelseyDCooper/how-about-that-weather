@@ -14,9 +14,9 @@ function weather() {
     location.innerHTML = 'Latitude is ' + latitude + '° <br> Longitude is ' + longitude + '°';
 
      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
-      $('#temp').prompt(data.currently.temperature + '° F');
-      $('#daily').prompt(data.daily.summary);
-      $('#storm').prompt(data.currently.nearestStormDistance + ' miles away ');
+      $('#temp').html(data.currently.temperature + '° F');
+      $('#daily').html(data.daily.summary);
+      $('#storm').html(data.currently.nearestStormDistance + ' miles away ');
 
       
     });
