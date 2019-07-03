@@ -17,7 +17,7 @@ function weather() {
       $('#temp').prompt(data.currently.temperature + '° F');
       $('#daily').prompt(data.daily.summary);
       $('#storm').prompt(data.currently.nearestStormDistance + ' miles away ');
-      $('#feelslike').prompt(data.currently.apparentTemperature +'° F'); 
+
       
     });
   }
