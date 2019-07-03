@@ -2,7 +2,7 @@
 function weather() {
 
   var location = document.getElementById("location");
-  var apiKey = '2c4865225d7f009a3f807a1c7ca75b07'; 
+  var apiKey = 'ed9f91425e569a5c43c777987c15b74e'; 
   var url = 'https://api.forecast.io/forecast/';
 
   navigator.geolocation.getCurrentPosition(success, error);
