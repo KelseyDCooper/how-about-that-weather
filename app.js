@@ -25,7 +25,7 @@ function weather() {
     location.innerHTML = "Unable to retrieve your location. Please enable geolocation and try again.";
   }
 
-  location.innerHTML = "Loading your location data...just a sec";
+  location.innerHTML = "Loading your location data...";
 }
 
 weather();
