@@ -30,8 +30,26 @@
 <br>
 <br>
 <div id="location" style="width: auto; display: inline-block;"></div>
+ 
+ <input id="getAssignment" type="button" value="Get assignment">
+
+<div id="a1" class="assignment">Assigment 1</div>
+ 
+ 
  </body>
  <script src="app.js"></script>
+
+<script>
+ $(document).ready(function() {
+   var $assignments = $(".assignment");
+   $assignments.hide();
+   $("#getAssignment").click(function() {
+      $assignments.hide();
+      if ($assignments.length > 0)
+         $($assignments[Math.floor(Math.random()*$assignments.length)]).show();
+   });
+});
+</script>
 
 
 </html> 
