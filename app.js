@@ -18,6 +18,7 @@ function weather() {
       $('#daily').html(data.daily.summary);
       $('#storm').html(data.currently.nearestStormDistance + ' miles away ');
       $('#icon').html(data.currently.icon);
+      $('#feels').html(data.currently.apparentTemperature);
     });
   }
 
